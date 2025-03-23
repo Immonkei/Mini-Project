@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - My Store</title>
+  <meta name="description" content="Get in touch with My Store for any questions or concerns">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link href="css/styles.css" rel="stylesheet">
+  <!-- Include Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+  <!-- Header/Navigation -->
+  <header>
+    <nav class="bg-blue-400 shadow">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <!-- Store Logo -->
+          <a href="#" class="text-xl font-bold text-gray-800">My Store</a>
+          <!-- Navigation Links -->
+          <div class="flex space-x-4 items-center gap-10 text-2xl">
+            <a href="/src/index.html" class="text-white hover:text-yellow-600">Home</a>
+            <a href="/src/pages/about.html" class="text-white hover:text-yellow-600">About</a>
+            <a href="/src/pages/products.html" class="text-white hover:text-yellow-600">Products</a>
+            <a href="/src/pages/contact.html" class="text-white hover:text-yellow-600">Contact</a>
+
+            <!-- Account Icon with Text -->
+            <a href="/src/pages/acc.html" class="text-white hover:text-yellow-600 flex items-center space-x-2">
+              <i class="fas fa-user"></i>
+              <span>Account</span>
+            </a>
+
+            <!-- Cart Icon with Text -->
+            <a href="#" class="text-white hover:text-yellow-600 flex items-center space-x-2">
+              <i class="fas fa-shopping-cart"></i>
+              <span>Cart</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-6 py-8 flex-grow">
+    <section class="max-w-3xl mx-auto">
+      <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Contact Us</h1>
+
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <label for="name" class="text-sm font-medium text-gray-700">Name</label>
+              <input id="name" type="text" placeholder="Your name" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent">
+            </div>
+            <div class="space-y-2">
+              <label for="email" class="text-sm font-medium text-gray-700">Email</label>
+              <input id="email" type="email" placeholder="Your email" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent">
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <label for="subject" class="text-sm font-medium text-gray-700">Subject</label>
+            <input id="subject" type="text" placeholder="Subject" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent">
+          </div>
+
+          <div class="space-y-2">
+            <label for="message" class="text-sm font-medium text-gray-700">Message</label>
+            <textarea id="message" placeholder="Your message" rows="5" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-blue-400 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-md transition-colors">
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <article class="bg-white p-6 rounded-lg shadow">
+          <div class="mx-auto w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full text-blue-500 mb-4">
+            <i class="fa-solid fa-location-dot" class="h-6 w-6"></i>
+          </div>
+          <h3 class="font-semibold text-lg">Our Location</h3>
+          <p class="text-gray-600 mt-2">123 Store Street, City, Country</p>
+        </article>
+
+        <article class="bg-white p-6 rounded-lg shadow">
+          <div class="mx-auto w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full text-blue-500 mb-4">
+            <i class="fa-solid fa-phone-flip" class="h-6 w-6"></i>
+          </div>
+          <h3 class="font-semibold text-lg">Phone Number</h3>
+          <p class="text-gray-600 mt-2">+1 (123) 456-7890</p>
+        </article>
+
+        <article class="bg-white p-6 rounded-lg shadow">
+          <div class="mx-auto w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full text-blue-500 mb-4">
+            <i class="fa-solid fa-envelope" class="h-6 w-6"></i>
+          </div>
+          <h3 class="font-semibold text-lg">Email</h3>
+          <p class="text-gray-600 mt-2">contact@mystore.com</p>
+        </article>
+      </div>
+
+      <!-- Map Section -->
+      <section class="mt-12">
+        <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Find Us</h2>
+        <div class="w-full h-96 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.7772213445583!2d104.90327937476232!3d11.567822044098587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095115944018e9%3A0xca696affc581b049!2sApple%20Gold%20II!5e0!3m2!1sen!2skh!4v1742709969313!5m2!1sen!2skh"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="rounded-lg"
+            title="Our Store Location">
+          </iframe>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-400 shadow mt-8">
+    <div class="container mx-auto px-6 py-4">
+      <p class="text-center text-white">&copy; 2025 My Store. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

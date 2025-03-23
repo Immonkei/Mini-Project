@@ -1,0 +1,8 @@
+/* Custom styles */
+.custom-button {
+    transition: transform 0.2s ease-in-out;
+}
+
+.custom-button:hover {
+    transform: scale(1.05);
+}
